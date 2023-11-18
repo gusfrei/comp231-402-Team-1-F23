@@ -1,4 +1,4 @@
-﻿namespace EasyCooking
+﻿namespace EasyCookingApp
 {
     partial class Form1
     {
@@ -28,30 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button1 = new Button();
-            button2 = new Button();
+            hpgloginbtn = new Button();
+            hmpgrecipebtn = new Button();
             label1 = new Label();
             SuspendLayout();
             // 
-            // button1
+            // hpgloginbtn
             // 
-            button1.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            button1.Location = new Point(125, 155);
-            button1.Name = "button1";
-            button1.Size = new Size(244, 122);
-            button1.TabIndex = 0;
-            button1.Text = "Login";
-            button1.UseVisualStyleBackColor = true;
+            hpgloginbtn.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            hpgloginbtn.Location = new Point(125, 155);
+            hpgloginbtn.Name = "hpgloginbtn";
+            hpgloginbtn.Size = new Size(244, 122);
+            hpgloginbtn.TabIndex = 0;
+            hpgloginbtn.Text = "Login";
+            hpgloginbtn.UseVisualStyleBackColor = true;
+            hpgloginbtn.Click += hpgloginbtn_Click;
             // 
-            // button2
+            // hmpgrecipebtn
             // 
-            button2.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            button2.Location = new Point(446, 155);
-            button2.Name = "button2";
-            button2.Size = new Size(244, 122);
-            button2.TabIndex = 1;
-            button2.Text = "Search Recipes";
-            button2.UseVisualStyleBackColor = true;
+            hmpgrecipebtn.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            hmpgrecipebtn.Location = new Point(446, 155);
+            hmpgrecipebtn.Name = "hmpgrecipebtn";
+            hmpgrecipebtn.Size = new Size(244, 122);
+            hmpgrecipebtn.TabIndex = 1;
+            hmpgrecipebtn.Text = "Search Recipes";
+            hmpgrecipebtn.UseVisualStyleBackColor = true;
+            hmpgrecipebtn.Click += hmpgrecipebtn_Click;
             // 
             // label1
             // 
@@ -68,8 +70,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(label1);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(hmpgrecipebtn);
+            Controls.Add(hpgloginbtn);
             Name = "Form1";
             Text = "Form1";
             Load += Form1_Load;
@@ -78,8 +80,8 @@
 
         #endregion
 
-        private Button button1;
-        private Button button2;
+        private Button hpgloginbtn;
+        private Button hmpgrecipebtn;
         private Label label1;
     }
 }
