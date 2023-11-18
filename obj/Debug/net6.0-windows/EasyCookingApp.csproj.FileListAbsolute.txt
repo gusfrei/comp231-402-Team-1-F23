@@ -1,0 +1,16 @@
+C:\HI_Course\SEM5\software_project\groupProject\code_git\comp231-402-Team-1-F23\obj\Debug\net6.0-windows\EasyCooking.Form1.resources
+C:\HI_Course\SEM5\software_project\groupProject\code_git\comp231-402-Team-1-F23\obj\Debug\net6.0-windows\EasyCookingApp.csproj.GenerateResource.cache
+C:\HI_Course\SEM5\software_project\groupProject\code_git\comp231-402-Team-1-F23\obj\Debug\net6.0-windows\EasyCookingApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\HI_Course\SEM5\software_project\groupProject\code_git\comp231-402-Team-1-F23\obj\Debug\net6.0-windows\EasyCookingApp.AssemblyInfoInputs.cache
+C:\HI_Course\SEM5\software_project\groupProject\code_git\comp231-402-Team-1-F23\obj\Debug\net6.0-windows\EasyCookingApp.AssemblyInfo.cs
+C:\HI_Course\SEM5\software_project\groupProject\code_git\comp231-402-Team-1-F23\obj\Debug\net6.0-windows\EasyCookingApp.csproj.CoreCompileInputs.cache
+C:\HI_Course\SEM5\software_project\groupProject\code_git\comp231-402-Team-1-F23\bin\Debug\net6.0-windows\EasyCookingApp.exe
+C:\HI_Course\SEM5\software_project\groupProject\code_git\comp231-402-Team-1-F23\bin\Debug\net6.0-windows\EasyCookingApp.deps.json
+C:\HI_Course\SEM5\software_project\groupProject\code_git\comp231-402-Team-1-F23\bin\Debug\net6.0-windows\EasyCookingApp.runtimeconfig.json
+C:\HI_Course\SEM5\software_project\groupProject\code_git\comp231-402-Team-1-F23\bin\Debug\net6.0-windows\EasyCookingApp.dll
+C:\HI_Course\SEM5\software_project\groupProject\code_git\comp231-402-Team-1-F23\bin\Debug\net6.0-windows\EasyCookingApp.pdb
+C:\HI_Course\SEM5\software_project\groupProject\code_git\comp231-402-Team-1-F23\obj\Debug\net6.0-windows\EasyCookingApp.dll
+C:\HI_Course\SEM5\software_project\groupProject\code_git\comp231-402-Team-1-F23\obj\Debug\net6.0-windows\refint\EasyCookingApp.dll
+C:\HI_Course\SEM5\software_project\groupProject\code_git\comp231-402-Team-1-F23\obj\Debug\net6.0-windows\EasyCookingApp.pdb
+C:\HI_Course\SEM5\software_project\groupProject\code_git\comp231-402-Team-1-F23\obj\Debug\net6.0-windows\EasyCookingApp.genruntimeconfig.cache
+C:\HI_Course\SEM5\software_project\groupProject\code_git\comp231-402-Team-1-F23\obj\Debug\net6.0-windows\ref\EasyCookingApp.dll
