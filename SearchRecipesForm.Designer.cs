@@ -37,49 +37,55 @@
             // searchbtn
             // 
             searchbtn.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            searchbtn.Location = new Point(638, 79);
+            searchbtn.Location = new Point(911, 132);
+            searchbtn.Margin = new Padding(4, 5, 4, 5);
             searchbtn.Name = "searchbtn";
-            searchbtn.Size = new Size(120, 41);
+            searchbtn.Size = new Size(171, 68);
             searchbtn.TabIndex = 0;
             searchbtn.Text = "Search";
             searchbtn.UseVisualStyleBackColor = true;
             // 
             // searchtxbx
             // 
-            searchtxbx.Location = new Point(48, 79);
+            searchtxbx.Location = new Point(69, 132);
+            searchtxbx.Margin = new Padding(4, 5, 4, 5);
             searchtxbx.Multiline = true;
             searchtxbx.Name = "searchtxbx";
-            searchtxbx.Size = new Size(568, 41);
+            searchtxbx.Size = new Size(810, 66);
             searchtxbx.TabIndex = 1;
             // 
             // resultlstbx
             // 
             resultlstbx.FormattingEnabled = true;
-            resultlstbx.ItemHeight = 15;
-            resultlstbx.Location = new Point(48, 153);
+            resultlstbx.ItemHeight = 25;
+            resultlstbx.Location = new Point(69, 255);
+            resultlstbx.Margin = new Padding(4, 5, 4, 5);
             resultlstbx.Name = "resultlstbx";
-            resultlstbx.Size = new Size(710, 244);
+            resultlstbx.Size = new Size(1013, 404);
             resultlstbx.TabIndex = 2;
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(256, 9);
+            label1.Location = new Point(366, 15);
+            label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(233, 32);
+            label1.Size = new Size(342, 48);
             label1.TabIndex = 3;
             label1.Text = "Search Recipe Page";
             // 
             // SearchRecipesForm
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            BackColor = Color.LightCyan;
+            ClientSize = new Size(1143, 750);
             Controls.Add(label1);
             Controls.Add(resultlstbx);
             Controls.Add(searchtxbx);
             Controls.Add(searchbtn);
+            Margin = new Padding(4, 5, 4, 5);
             Name = "SearchRecipesForm";
             Text = "SearchRecipesForm";
             ResumeLayout(false);

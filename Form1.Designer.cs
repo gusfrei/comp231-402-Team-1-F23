@@ -35,43 +35,50 @@
             // 
             // hpgloginbtn
             // 
+            hpgloginbtn.BackColor = Color.Honeydew;
             hpgloginbtn.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            hpgloginbtn.Location = new Point(125, 155);
+            hpgloginbtn.Location = new Point(179, 258);
+            hpgloginbtn.Margin = new Padding(4, 5, 4, 5);
             hpgloginbtn.Name = "hpgloginbtn";
-            hpgloginbtn.Size = new Size(244, 122);
+            hpgloginbtn.Size = new Size(349, 203);
             hpgloginbtn.TabIndex = 0;
             hpgloginbtn.Text = "Login";
-            hpgloginbtn.UseVisualStyleBackColor = true;
+            hpgloginbtn.UseVisualStyleBackColor = false;
             hpgloginbtn.Click += hpgloginbtn_Click;
             // 
             // hmpgrecipebtn
             // 
+            hmpgrecipebtn.BackColor = Color.Honeydew;
             hmpgrecipebtn.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            hmpgrecipebtn.Location = new Point(446, 155);
+            hmpgrecipebtn.Location = new Point(637, 258);
+            hmpgrecipebtn.Margin = new Padding(4, 5, 4, 5);
             hmpgrecipebtn.Name = "hmpgrecipebtn";
-            hmpgrecipebtn.Size = new Size(244, 122);
+            hmpgrecipebtn.Size = new Size(349, 203);
             hmpgrecipebtn.TabIndex = 1;
             hmpgrecipebtn.Text = "Search Recipes";
-            hmpgrecipebtn.UseVisualStyleBackColor = true;
+            hmpgrecipebtn.UseVisualStyleBackColor = false;
             hmpgrecipebtn.Click += hmpgrecipebtn_Click;
             // 
             // label1
             // 
             label1.Font = new Font("Segoe UI", 36F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(231, 35);
+            label1.Location = new Point(330, 58);
+            label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(298, 77);
+            label1.Size = new Size(426, 128);
             label1.TabIndex = 2;
             label1.Text = "Home Page";
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            BackColor = Color.LightCyan;
+            ClientSize = new Size(1143, 750);
             Controls.Add(label1);
             Controls.Add(hmpgrecipebtn);
             Controls.Add(hpgloginbtn);
+            Margin = new Padding(4, 5, 4, 5);
             Name = "Form1";
             Text = "Form1";
             Load += Form1_Load;

@@ -40,9 +40,10 @@
             // loginbtn
             // 
             loginbtn.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            loginbtn.Location = new Point(311, 276);
+            loginbtn.Location = new Point(444, 460);
+            loginbtn.Margin = new Padding(4, 5, 4, 5);
             loginbtn.Name = "loginbtn";
-            loginbtn.Size = new Size(139, 38);
+            loginbtn.Size = new Size(199, 63);
             loginbtn.TabIndex = 0;
             loginbtn.Text = "Login";
             loginbtn.UseVisualStyleBackColor = true;
@@ -50,62 +51,69 @@
             // label1
             // 
             label1.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(193, 112);
+            label1.Location = new Point(276, 187);
+            label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(169, 39);
+            label1.Size = new Size(241, 65);
             label1.TabIndex = 1;
             label1.Text = "User ID";
             // 
             // userIdtbx
             // 
-            userIdtbx.Location = new Point(368, 112);
+            userIdtbx.Location = new Point(526, 187);
+            userIdtbx.Margin = new Padding(4, 5, 4, 5);
             userIdtbx.Multiline = true;
             userIdtbx.Name = "userIdtbx";
-            userIdtbx.Size = new Size(228, 39);
+            userIdtbx.Size = new Size(324, 62);
             userIdtbx.TabIndex = 2;
             // 
             // label2
             // 
             label2.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.Location = new Point(193, 173);
+            label2.Location = new Point(276, 288);
+            label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
-            label2.Size = new Size(169, 39);
+            label2.Size = new Size(241, 65);
             label2.TabIndex = 3;
             label2.Text = "Password";
             // 
             // pwdtxbx
             // 
-            pwdtxbx.Location = new Point(368, 173);
+            pwdtxbx.Location = new Point(526, 288);
+            pwdtxbx.Margin = new Padding(4, 5, 4, 5);
             pwdtxbx.Multiline = true;
             pwdtxbx.Name = "pwdtxbx";
             pwdtxbx.PasswordChar = '*';
-            pwdtxbx.Size = new Size(228, 39);
+            pwdtxbx.Size = new Size(324, 62);
             pwdtxbx.TabIndex = 4;
             // 
             // label3
             // 
             label3.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.Location = new Point(284, 21);
+            label3.Location = new Point(406, 35);
+            label3.Margin = new Padding(4, 0, 4, 0);
             label3.Name = "label3";
-            label3.Size = new Size(185, 39);
+            label3.Size = new Size(264, 65);
             label3.TabIndex = 5;
             label3.Text = "Login Page";
             // 
             // bckbtn
             // 
             bckbtn.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            bckbtn.Location = new Point(480, 276);
+            bckbtn.Location = new Point(686, 460);
+            bckbtn.Margin = new Padding(4, 5, 4, 5);
             bckbtn.Name = "bckbtn";
-            bckbtn.Size = new Size(139, 38);
+            bckbtn.Size = new Size(199, 63);
             bckbtn.TabIndex = 6;
             bckbtn.Text = "Back";
             bckbtn.UseVisualStyleBackColor = true;
             // 
             // LoginForm
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            BackColor = Color.LightCyan;
+            ClientSize = new Size(1143, 750);
             Controls.Add(bckbtn);
             Controls.Add(label3);
             Controls.Add(pwdtxbx);
@@ -113,6 +121,7 @@
             Controls.Add(userIdtbx);
             Controls.Add(label1);
             Controls.Add(loginbtn);
+            Margin = new Padding(4, 5, 4, 5);
             Name = "LoginForm";
             Text = "LoginForm";
             ResumeLayout(false);
