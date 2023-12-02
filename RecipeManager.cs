@@ -34,11 +34,6 @@ public class RecipeManager
                     new Ingredient { Name = "Bacon", Quantity = "100g" },
                     new Ingredient { Name = "Eggs", Quantity = "2" },
                     new Ingredient { Name = "Cheese", Quantity = "50g" }
-                },
-                Keywords = new List<Keywords>
-                {
-                    new Keywords {Keyword_Meat = "Bacon"},                    
-                    new Keywords {Keyword_MainStarch = "Pasta"}
                 }
             },
         };
