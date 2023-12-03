@@ -28,64 +28,70 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.searchbtn = new System.Windows.Forms.Button();
-            this.searchtxbx = new System.Windows.Forms.TextBox();
-            this.resultlstbx = new System.Windows.Forms.ListBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.SuspendLayout();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SearchRecipesForm));
+            searchbtn = new Button();
+            searchtxbx = new TextBox();
+            resultlstbx = new ListBox();
+            label1 = new Label();
+            SuspendLayout();
             // 
             // searchbtn
             // 
-            this.searchbtn.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.searchbtn.Location = new System.Drawing.Point(638, 79);
-            this.searchbtn.Name = "searchbtn";
-            this.searchbtn.Size = new System.Drawing.Size(120, 41);
-            this.searchbtn.TabIndex = 0;
-            this.searchbtn.Text = "Search";
-            this.searchbtn.UseVisualStyleBackColor = true;
+            searchbtn.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            searchbtn.Location = new Point(911, 132);
+            searchbtn.Margin = new Padding(4, 5, 4, 5);
+            searchbtn.Name = "searchbtn";
+            searchbtn.Size = new Size(171, 68);
+            searchbtn.TabIndex = 0;
+            searchbtn.Text = "Search";
+            searchbtn.UseVisualStyleBackColor = true;
             // 
             // searchtxbx
             // 
-            this.searchtxbx.Location = new System.Drawing.Point(48, 79);
-            this.searchtxbx.Multiline = true;
-            this.searchtxbx.Name = "searchtxbx";
-            this.searchtxbx.Size = new System.Drawing.Size(568, 41);
-            this.searchtxbx.TabIndex = 1;
+            searchtxbx.Location = new Point(69, 132);
+            searchtxbx.Margin = new Padding(4, 5, 4, 5);
+            searchtxbx.Multiline = true;
+            searchtxbx.Name = "searchtxbx";
+            searchtxbx.Size = new Size(810, 66);
+            searchtxbx.TabIndex = 1;
             // 
             // resultlstbx
             // 
-            this.resultlstbx.FormattingEnabled = true;
-            this.resultlstbx.ItemHeight = 15;
-            this.resultlstbx.Location = new System.Drawing.Point(48, 153);
-            this.resultlstbx.Name = "resultlstbx";
-            this.resultlstbx.Size = new System.Drawing.Size(710, 244);
-            this.resultlstbx.TabIndex = 2;
+            resultlstbx.FormattingEnabled = true;
+            resultlstbx.ItemHeight = 25;
+            resultlstbx.Location = new Point(69, 255);
+            resultlstbx.Margin = new Padding(4, 5, 4, 5);
+            resultlstbx.Name = "resultlstbx";
+            resultlstbx.Size = new Size(1013, 404);
+            resultlstbx.TabIndex = 2;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(256, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(233, 32);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Search Recipe Page";
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Location = new Point(366, 15);
+            label1.Margin = new Padding(4, 0, 4, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(342, 48);
+            label1.TabIndex = 3;
+            label1.Text = "Search Recipe Page";
             // 
             // SearchRecipesForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Tomato;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.resultlstbx);
-            this.Controls.Add(this.searchtxbx);
-            this.Controls.Add(this.searchbtn);
-            this.Name = "SearchRecipesForm";
-            this.Text = "SearchRecipesForm";
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.Tomato;
+            ClientSize = new Size(1143, 750);
+            Controls.Add(label1);
+            Controls.Add(resultlstbx);
+            Controls.Add(searchtxbx);
+            Controls.Add(searchbtn);
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            Margin = new Padding(4, 5, 4, 5);
+            Name = "SearchRecipesForm";
+            Text = "SearchRecipesForm";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

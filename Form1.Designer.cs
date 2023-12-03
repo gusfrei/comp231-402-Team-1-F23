@@ -28,55 +28,60 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.hpgloginbtn = new System.Windows.Forms.Button();
-            this.hmpgrecipebtn = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.SuspendLayout();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            hpgloginbtn = new Button();
+            hmpgrecipebtn = new Button();
+            label1 = new Label();
+            SuspendLayout();
             // 
             // hpgloginbtn
             // 
-            this.hpgloginbtn.BackColor = System.Drawing.Color.Honeydew;
-            this.hpgloginbtn.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.hpgloginbtn.Location = new System.Drawing.Point(125, 155);
-            this.hpgloginbtn.Name = "hpgloginbtn";
-            this.hpgloginbtn.Size = new System.Drawing.Size(244, 122);
-            this.hpgloginbtn.TabIndex = 0;
-            this.hpgloginbtn.Text = "Login";
-            this.hpgloginbtn.UseVisualStyleBackColor = false;
+            hpgloginbtn.BackColor = Color.Honeydew;
+            hpgloginbtn.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            hpgloginbtn.Location = new Point(179, 258);
+            hpgloginbtn.Margin = new Padding(4, 5, 4, 5);
+            hpgloginbtn.Name = "hpgloginbtn";
+            hpgloginbtn.Size = new Size(349, 203);
+            hpgloginbtn.TabIndex = 0;
+            hpgloginbtn.Text = "Login";
+            hpgloginbtn.UseVisualStyleBackColor = false;
             // 
             // hmpgrecipebtn
             // 
-            this.hmpgrecipebtn.BackColor = System.Drawing.Color.Honeydew;
-            this.hmpgrecipebtn.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.hmpgrecipebtn.Location = new System.Drawing.Point(446, 155);
-            this.hmpgrecipebtn.Name = "hmpgrecipebtn";
-            this.hmpgrecipebtn.Size = new System.Drawing.Size(244, 122);
-            this.hmpgrecipebtn.TabIndex = 1;
-            this.hmpgrecipebtn.Text = "Search Recipes";
-            this.hmpgrecipebtn.UseVisualStyleBackColor = false;
+            hmpgrecipebtn.BackColor = Color.Honeydew;
+            hmpgrecipebtn.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            hmpgrecipebtn.Location = new Point(637, 258);
+            hmpgrecipebtn.Margin = new Padding(4, 5, 4, 5);
+            hmpgrecipebtn.Name = "hmpgrecipebtn";
+            hmpgrecipebtn.Size = new Size(349, 203);
+            hmpgrecipebtn.TabIndex = 1;
+            hmpgrecipebtn.Text = "Search Recipes";
+            hmpgrecipebtn.UseVisualStyleBackColor = false;
             // 
             // label1
             // 
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(231, 35);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(298, 77);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Home Page";
+            label1.Font = new Font("Segoe UI", 36F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Location = new Point(330, 58);
+            label1.Margin = new Padding(4, 0, 4, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(426, 128);
+            label1.TabIndex = 2;
+            label1.Text = "Home Page";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Tomato;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.hmpgrecipebtn);
-            this.Controls.Add(this.hpgloginbtn);
-            this.Name = "Form1";
-            this.Text = "Form1";
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.Tomato;
+            ClientSize = new Size(1143, 750);
+            Controls.Add(label1);
+            Controls.Add(hmpgrecipebtn);
+            Controls.Add(hpgloginbtn);
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            Margin = new Padding(4, 5, 4, 5);
+            Name = "Form1";
+            Text = "Form1";
+            ResumeLayout(false);
         }
 
         #endregion

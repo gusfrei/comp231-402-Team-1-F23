@@ -14,4 +14,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = EasyCookingApp
-build_property.ProjectDir = D:\Centennial\Semester5\SoftwareDevelop\comp231-402-Team-1-F23\
+build_property.ProjectDir = C:\Users\tahne\source\repos\comp231-402-Team-1-F23\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
