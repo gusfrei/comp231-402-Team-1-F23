@@ -31,6 +31,7 @@
             hpgloginbtn = new Button();
             hmpgrecipebtn = new Button();
             label1 = new Label();
+            label2 = new Label();
             SuspendLayout();
             // 
             // hpgloginbtn
@@ -59,12 +60,26 @@
             // 
             // label1
             // 
-            label1.Font = new Font("Segoe UI", 36F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(231, 35);
+            label1.BackColor = Color.LightYellow;
+            label1.Font = new Font("Segoe UI", 30F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Location = new Point(257, 330);
             label1.Name = "label1";
-            label1.Size = new Size(298, 77);
+            label1.Size = new Size(244, 52);
             label1.TabIndex = 2;
             label1.Text = "Home Page";
+            label1.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // label2
+            // 
+            label2.BackColor = Color.MintCream;
+            label2.Font = new Font("Segoe UI", 30F, FontStyle.Bold, GraphicsUnit.Point);
+            label2.ForeColor = SystemColors.Highlight;
+            label2.Location = new Point(193, 45);
+            label2.Name = "label2";
+            label2.Size = new Size(367, 55);
+            label2.TabIndex = 3;
+            label2.Text = "Easy Cooking App";
+            label2.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // Form1
             // 
@@ -72,11 +87,12 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.LightCyan;
             ClientSize = new Size(800, 450);
+            Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(hmpgrecipebtn);
             Controls.Add(hpgloginbtn);
             Name = "Form1";
-            Text = "Form1";
+            Text = "Easy Cooking App";
             Load += Form1_Load;
             ResumeLayout(false);
         }
@@ -86,5 +102,6 @@
         private Button hpgloginbtn;
         private Button hmpgrecipebtn;
         private Label label1;
+        private Label label2;
     }
 }

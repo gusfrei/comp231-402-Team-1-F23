@@ -23,13 +23,13 @@ namespace EasyCookingApp
 
         private void adm_useradd_btn_Click(object sender, EventArgs e)
         {
-            UserAddForm useradd = new UserAddForm();
+            UserAddForm useradd = new UserAddForm(LoginUser);
             useradd.Show();
         }
 
         private void admn_userrem_btn_Click(object sender, EventArgs e)
         {
-            UserAddForm useradd = new UserAddForm();
+            UserAddForm useradd = new UserAddForm(LoginUser);
             useradd.Show();
         }
 

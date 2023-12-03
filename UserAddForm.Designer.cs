@@ -121,7 +121,7 @@
             // useradd_remove_btn
             // 
             useradd_remove_btn.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            useradd_remove_btn.Location = new Point(459, 168);
+            useradd_remove_btn.Location = new Point(435, 168);
             useradd_remove_btn.Name = "useradd_remove_btn";
             useradd_remove_btn.Size = new Size(117, 44);
             useradd_remove_btn.TabIndex = 8;
@@ -132,7 +132,7 @@
             // useradd_search_btn
             // 
             useradd_search_btn.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            useradd_search_btn.Location = new Point(459, 68);
+            useradd_search_btn.Location = new Point(435, 68);
             useradd_search_btn.Name = "useradd_search_btn";
             useradd_search_btn.Size = new Size(117, 44);
             useradd_search_btn.TabIndex = 9;
@@ -144,7 +144,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(588, 391);
+            ClientSize = new Size(588, 356);
             Controls.Add(useradd_search_btn);
             Controls.Add(useradd_remove_btn);
             Controls.Add(useradd_cancel_btn);

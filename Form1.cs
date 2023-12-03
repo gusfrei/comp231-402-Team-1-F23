@@ -25,5 +25,6 @@ namespace EasyCookingApp
             SearchRecipesForm form = new SearchRecipesForm();
             form.Show();
         }
+
     }
 }

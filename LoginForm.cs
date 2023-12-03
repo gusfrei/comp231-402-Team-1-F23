@@ -16,6 +16,7 @@ namespace EasyCookingApp
 {
     public partial class LoginForm : Form
     {
+        String loginUser = "";
         public LoginForm()
         {
             InitializeComponent();
@@ -40,7 +41,7 @@ namespace EasyCookingApp
                     if (reader.HasRows)
                     {
                         reader.Read();
-                        String loginUser = reader["userid"].ToString();
+                        loginUser = reader["userid"].ToString();
                         MessageBox.Show("Login Successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         this.Hide();
 
@@ -69,7 +70,6 @@ namespace EasyCookingApp
             }
         }
 
-
         private void loginbtn_Click(object sender, EventArgs e)
         {
             string userName = this.userIdtbx.Text;
@@ -84,6 +84,13 @@ namespace EasyCookingApp
                 string query = $"SELECT * FROM Credentials WHERE userid = '{userName}' AND password = '{passWord}'";
                 Connection(query);
             }
+        }
+
+        private void logn_signup_btn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            UserAddForm useraddform = new UserAddForm(loginUser);
+            useraddform.Show();
         }
 
         private void bckbtn_Click(object sender, EventArgs e)

@@ -14,9 +14,14 @@ namespace EasyCookingApp
 {
     public partial class UserAddForm : Form
     {
-        public UserAddForm()
+        public UserAddForm(string logedin_user)
         {
             InitializeComponent();
+            if (!logedin_user.Contains("admin"))
+            {
+                useradd_remove_btn.Enabled = false;
+                useradd_search_btn.Enabled = false; 
+            } 
         }
 
         void Connection(string sqlQuery, int selection)

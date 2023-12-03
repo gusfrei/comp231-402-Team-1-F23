@@ -14,7 +14,7 @@ namespace EasyCookingApp
 {
     public partial class ViewRecipeForm : Form
     {
-        void Connection(string sqlQuery)
+        void Connection(string sqlQuery, int selection)
         {
             string currentDirectory = Directory.GetCurrentDirectory();
             string relativePath = @"..\..\..\database\Recipedb.mdf";
@@ -29,14 +29,23 @@ namespace EasyCookingApp
                 {
                     connection.Open();
                     SqlDataReader reader = command.ExecuteReader();
-
-                    if (reader.HasRows)
+                    if(selection == 1)
                     {
-                        reader.Read();
-                        viewrcp_catrcp_txt.Text = reader["RecipeCategory"].ToString();
-                        viewrcp_namercp_txt.Text = reader["RecipeName"].ToString();
-                        viewrcp_stepbstp_txb.Text = reader["RecipeInstruction"].ToString();
-                        viewrcp_usercommts_txb.Text = reader["RecipeComments"].ToString();
+                        if (reader.HasRows)
+                        {
+                            reader.Read();
+                            viewrcp_catrcp_txt.Text = reader["RecipeCategory"].ToString();
+                            viewrcp_namercp_txt.Text = reader["RecipeName"].ToString();
+                            viewrcp_stepbstp_txb.Text = reader["RecipeInstruction"].ToString();
+                            viewrcp_usercommts_txb.Text = reader["RecipeComments"].ToString();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Recipe not found", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                    }else if(selection == 2)
+                    {
+                        MessageBox.Show("Your Comments has been updated!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                     else
                     {
@@ -58,7 +67,7 @@ namespace EasyCookingApp
             InitializeComponent();
             RECIPE_ID = Recipe_id;
             string query = $"SELECT * FROM RecipeTable WHERE RecipeId = {Recipe_id}";
-            Connection(query);
+            Connection(query,1);
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -71,8 +80,7 @@ namespace EasyCookingApp
             else
             {
                 string query = $"UPDATE RecipeTable SET RecipeComments = '{viewComments}' WHERE RecipeId = {RECIPE_ID}";
-                Connection(query);
-                MessageBox.Show("Your Comments has been updated!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Connection(query,2);
             }
         }
 
